@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+        <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Normalize -->
+        <link rel="stylesheet" href="assets/css/normalize.css">
+        <!-- Styles -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-300px.css" media="screen and (min-width:300px)"> -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-400px.css" media="screen and (min-width:400px)"> -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-500px.css" media="screen and (min-width:500px)"> -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-600px.css" media="screen and (min-width:600px)"> -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-800px.css" media="screen and (min-width:800px)"> -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-1000px.css" media="screen and (min-width:1000px)"> -->
+        <!-- <link rel="stylesheet" href="assets/css/styles-1300px.css" media="screen and (min-width:1300px)"> -->
+
+        <link rel="stylesheet" href="assets/css/fontello/css/fontello.css">
+        <link rel="stylesheet" href="assets/css/styles-1300px.css">
+
+        <!--  FONT AWESOME  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+        <!-- FONT MUSEOMODERNO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;400;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+        <title>Logos Institute | Contácto</title>
+    </head>
+    <body>
+        
+
+        <header>
+            <nav class="main-nav">            
+                <div class="icon-asidebar button-clicked">
+                    <i class="icon-align-justify"></i>
+                </div>
+                <ul class="clear-list">
+                    <li><a class="clear-link mon" href="index.html" >Inicio</a></li>
+                    <li><a class="clear-link mon" href="us.html" >Nosotros</a></li>
+                    <li><a class="clear-link mon" href="#" >Contáctanos</a></li>
+                </ul>
+            </nav>
+            <div class="hero-container hero-container-contact">
+                <div class="hero-image">
+                    <img class="mon" src="assets/img/png/primario_sin_fondo_3.png" alt="Logos-Institute">            
+                </div>            
+            </div>
+            <div class="sidebar-menu mon">
+                <nav class="lateral-nav mon">
+                    <img class="logo-lateral-menu" src="assets/img/jpg/sublogo_1.jpg" alt="Logo-Image">
+                    <ul class="lateral-menu mon clear-list">
+                        <li><a class="clear-link" href="index.html">Inicio</a></li>
+                        <li><a class="clear-link" href="us.html">Nosotros</a></li>
+                        <li><a class="clear-link" href="products.html">Productos</a></li>
+                        <li><a class="clear-link" href="blog.html">Blog</a></li>
+                        <li><a class="clear-link" href="contact.html">Contáctanos</a></li>
+                        <li><a class="clear-link" href="qa.html">Preguntas frecuentes</a></li>
+                        <li><a class="clear-link" href="about.html">Acerca de</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <h2 class="second-title margin-top">Contacto</h2>                        
+            <form class="formulario">
+                <div class="container-forms">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                            <div class="campo">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" placeholder="Introduce tu nombre" required>
+                            </div>
+                            <div class="campo">
+                                <label for="asunto">Asunto:</label>
+                                <input type="text" id="asunto" placeholder="Asunto" required>
+                            </div>
+                            <div class="campo">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" placeholder="Email">
+                            </div>
+                            <div class="campo">
+                                <label for="telefono">Telefono:</label>
+                                <input type="tel" id="telefono" placeholder="Teléfono">
+                            </div>
+                            <div class="campo">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea id="mensaje" cols="30" rows="10"></textarea>
+                            </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Información extra</legend>
+                            <div class="campo">
+                                <label for="pais">País</label>
+                                <select id="pais">
+                                    <option disabled value="">--Seleccione un país--</option>
+                                    <option value="MX">México</option>
+                                    <option value="PR">Perú</option>
+                                    <option value="CO">Colombia</option>
+                                    <option selected value="AR">Argentina</option>
+                                    <option value="ES">España</option>
+                                    <option value="CL">Chile</option>                                                                
+                                </select>
+                            </div>
+                            <div class="campo">
+                                <label for="categoria">Categorías de interes</label>
+                                <input list="categorias" name="categorias">
+                                <datalist id="categorias">
+                                    <option value="Capacitación"></option>
+                                    <option value="Colaboración"></option>
+                                    <option value="Inglés"></option>
+                                    <option value="Migración"></option>
+                                </datalist>
+                            </div>               
+                    </fieldset>                      
+                </div>
+
+
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </main>
+        <footer class="main-footer mon">
+            <div class="footer-container">
+                <div class="footer-social">
+                    <p class="social-title">Siguenos en nuestras redes sociales</p>
+                    <ul class="footer-social-list clear-list">
+                        <li>
+                            <a class="clear-link" href="#" target="blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="clear-link" href="#" target="blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="clear-link" href="#" target="blank">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <span class="copyright">Logos Institute 2022 - Todos los derechos reservados</span>
+        </footer>
+        <script src="assets/js/app-sidebar.js"></script> 
+    </body>
+</html>
