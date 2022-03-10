@@ -245,6 +245,7 @@ body {
 
 .sidebar-menu {
     background-color: var(--main-black);
+    background-color: blue;
     color:            var(--main-white);
     height:           80vh;
     /* left:             -22vw; */
@@ -347,9 +348,10 @@ body {
     color:            var(--main-white);    
     display:          flex;
     flex-direction:   column;
-    height:           60vh;
+    height:           60%;
     justify-content:  center;
     margin-top:       10rem;
+    padding:          2rem 0;
 }
 
 .footer-social {
@@ -365,7 +367,7 @@ body {
     flex-direction:   column;
     gap:              4rem;
     justify-content:  space-around;
-    margin:           4rem 0 6rem 0;
+    margin:           4rem 0;
 }
 
 .fab {
