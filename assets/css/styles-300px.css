@@ -246,10 +246,10 @@ body {
 .sidebar-menu {
     background-color: var(--main-black);
     color:            var(--main-white);
-    height:           80vh;
+    height:           66%;
     /* left:             -22vw; */
     position:         fixed;
-    top:              -80vh;
+    top:              -66%;
     transition:       all 1s ease-in-out;
     width:            100vw;
 } 
@@ -297,7 +297,7 @@ body {
 .sublateral-menu a {
     color:      var(--main-white);
     display:    block;
-    font-size:  var(--large);
+    font-size:  var(--medium);
     padding:    0; 
     margin:     0;
     height:     100%;

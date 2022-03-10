@@ -107,15 +107,17 @@
 .logo-lateral-menu {
     /* border-radius: 50%; */
     height:        18vh; 
+    top: 0;
 }
 
 .menus {
     align-items:    flex-start;
-    /* border-top:     0.1rem solid var(--main-white); */
+    border-top:     0.1rem solid var(--main-white);
     /* display:        flex; */
     flex-direction: column;
     gap:            0;
     width:          100%;
+    top: 0;
 }
 
 .lateral-menu,
@@ -123,13 +125,13 @@
     align-items: flex-start;
     /* display:        flex;     */
     /* flex-direction: column; */
-    gap:            1.8rem;
+    gap:            1.4rem;
     margin-top:     0rem;
     width:          100%;
 }
 
 .menus {
-    padding-top: 2rem;
+    padding: 2rem 0 0 0; 
 }
 
 .lateral-menu li,
@@ -156,7 +158,7 @@
 .sublateral-menu a {
     /* color:       var(--main-white); */
     /* display:     block; */
-    /* font-size:   var(--large); */
+    font-size:   var(--large);
     padding:     0 0 0 4rem; 
     /* margin:      0; */
     /* height:      100%; */

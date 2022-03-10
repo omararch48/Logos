@@ -27,10 +27,10 @@
 .sidebar-menu {
     background-color: var(--main-black);
     color:            var(--main-white);
-    height:           64%;
+    height:           50%;
     /* left:             -22vw; */
     position:         fixed;
-    top:              -64%;
+    top:              -50%;
     transition:       all 1s ease-in-out;
     width:            100vw;
 } 
@@ -44,10 +44,20 @@
     margin-top:      2rem;
 }
 
+.logo-lateral-menu {
+    /* border-radius: 50%; */
+    height:        18vh; 
+    position:      relative;
+    top: 12vh;
+}
+
 .menus {
+    border-top:     0rem solid var(--main-white);
     flex-direction: row;
     margin-top:     1rem;
     padding:        10% auto;
+    position:       relative;
+    top:            -16vh;
 }
 
 .lateral-menu,
