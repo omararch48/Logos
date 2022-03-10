@@ -51,3 +51,47 @@
 /**********************************************************/
 /************************* Footer *************************/
 /**********************************************************/
+
+.main-footer {
+    /* align-items:      center; */
+    /* background-color: var(--main-black); */
+    /* color:            var(--main-white);     */
+    /* display:          flex; */
+    /* flex-direction:   column; */
+    /* height:           46vh; */
+    /* justify-content:  center; */
+    /* margin-top:       10rem; */
+}
+
+.footer-social {
+    /* align-items:      center; */
+    /* display:          flex; */
+    /* flex-direction:   column; */
+    /* justify-content:  center; */
+}
+
+.footer-social-list {
+    /* align-items:      center; */
+    /* display:          flex; */
+    gap:              12rem;
+    /* justify-content:  space-around; */
+    /* margin:           4rem 0 6rem 0; */
+}
+
+.fab {
+    /* color:      var(--main-white); */
+    font-size:  var(--lllll);   
+    /* transition: all 0.2s linear; */
+}
+
+.fab:hover {
+    /* transform: scale(1.8); */
+}
+
+.social-title {
+    font-size: var(--ll);
+}
+
+.copyright {
+    font-size: var(--medium);
+}

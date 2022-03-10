@@ -22,61 +22,6 @@
 /************************* Hero, Nav and Sidemenu *************************/
 /**************************************************************************/
 
-/* Main nav */
-
-.main-nav {
-    background-color:      var(--main-black);
-    color:                 var(--main-white);
-    display:               grid;
-    font-size:             var(--large);
-    gap:                   4rem;
-    grid-template-columns: repeat(2, 1fr);
-    height:                0;    
-    position:              fixed;
-    top:                   0;
-    width:                 100%;
-    z-index:               1000;
-}
-
-.button-clicked {
-    align-items:     center;
-    display:         flex;
-    justify-content: flex-start;
-}
-
-.button-clicked i {
-    background-color: var(--main-black);
-    border-radius:    100%;
-    display:          block;
-    margin-left:      2rem;
-    margin-top:       1rem;
-    padding:          1rem;
-    transition:       all 0.16s linear;
-}
-
-.button-clicked:hover i {
-    cursor: pointer;
-}
-
-.button-clicked:active i {
-    transform: rotate(180deg);
-}
-
-.main-nav ul {
-    display:         none;
-    justify-content: space-around;
-    align-items:     center;
-}
-
-.main-nav a {
-    border-bottom: solid var(--main-black) 0.4rem;
-    color:         var(--main-white);
-    display:       block;
-}
-
-.main-nav a:hover {
-    border-bottom: solid var(--main-white) 0.4rem;
-}
 
 /* Hero */
 
@@ -94,12 +39,12 @@
 
 .hero-container {
     background-position: center/bottom;
-    background-repeat:   no-repeat;
-    background-size:     cover;    
+    /* background-repeat:   no-repeat; */
+    /* background-size:     cover;     */
     height:              100vh;
-    margin:              0;
-    padding:             0;
-    width:               100%;
+    /* margin:              0; */
+    /* padding:             0; */
+    /* width:               100%; */
 }
 
 .hero-image {
@@ -110,78 +55,18 @@
     justify-content:  center;
 }
 
+.hero-img-first {
+    display: block;
+}
+
+.hero-img-second {
+    display: none;
+}
+
 .hero-image img {
     height:     76vh;
     margin-top: 10rem;
     width:      76vw;
-}
-
-/* Sidebar Menu */
-
-.sidebar-menu.active {
-    top: 0;
-}
-
-.sidebar-menu {
-    background-color: var(--main-black);
-    color:            var(--main-white);
-    height:           60vh;
-    /* left:             -22vw; */
-    position:         fixed;
-    top:              -60vh;
-    transition:       all 1s ease-in-out;
-    width:            100vw;
-} 
-
-.lateral-nav {
-    align-items:     center;
-    display:         flex;
-    flex-direction:  column;
-    gap:             2rem;
-    justify-content: center;
-    margin-top:      2rem;
-}
-
-.logo-lateral-menu {
-    border-radius: 50%;
-    height:        18vh; 
-}
-
-.menus {
-    align-items: center;
-    border-top:     0.1rem solid var(--main-white);
-    display: flex;
-    width:   100%;
-}
-
-
-.lateral-menu,
-.sublateral-menu  {
-    align-items:    center;
-    display:        flex;    
-    flex-direction: column;
-    gap:            0rem;
-    margin-top:     0rem;
-    padding-top:    1.4rem;
-    width:          100%;
-}
-
-.lateral-menu a, 
-.sublateral-menu a {
-    color:      var(--main-white);
-    display:    block;
-    font-size:  var(--large);
-    padding:    0 0 0 4rem; 
-    margin:     0;
-    height:     100%;
-    width:      100%;
-    transition: all 0.2s linear;
-}
-
-.lateral-menu a:hover, 
-.sublateral-menu a:hover {
-    /* background-color: var(--main-white); */
-    /* color:            var(--main-black); */
 }
 
 

@@ -124,15 +124,20 @@
     /* display:        flex;     */
     /* flex-direction: column; */
     gap:            1.8rem;
+    margin-top:     0rem;
     width:          100%;
+}
+
+.menus {
+    padding-top: 2rem;
 }
 
 .lateral-menu li,
 .sublateral-menu li {
     /* text-align:   left; */
     padding: 0;
-    margin: 0;
-    width:          100%;
+    margin:  0;
+    width:   100%;
 }
 
 .lateral-menu {
@@ -147,11 +152,12 @@
 .sublateral-menu li {
     text-align: left;
 }
+.lateral-menu a,
 .sublateral-menu a {
     /* color:       var(--main-white); */
     /* display:     block; */
     /* font-size:   var(--large); */
-    /* padding:     0 0 0 4rem;  */
+    padding:     0 0 0 4rem; 
     /* margin:      0; */
     /* height:      100%; */
     width:       100%;
@@ -451,45 +457,45 @@ label {
 /**********************************************************/
 
 .main-footer {
-    align-items:      center;
-    background-color: var(--main-black);
-    color:            var(--main-white);    
-    display:          flex;
-    flex-direction:   column;
-    height:           46vh;
-    justify-content:  center;
-    margin-top:       10rem;
+    /* align-items:      center; */
+    /* background-color: var(--main-black); */
+    /* color:            var(--main-white);     */
+    /* display:          flex; */
+    /* flex-direction:   column; */
+    /* height:           46vh; */
+    /* justify-content:  center; */
+    /* margin-top:       10rem; */
 }
 
 .footer-social {
-    align-items:      center;
-    display:          flex;
-    flex-direction:   column;
-    justify-content:  center;
+    /* align-items:      center; */
+    /* display:          flex; */
+    /* flex-direction:   column; */
+    /* justify-content:  center; */
 }
 
 .footer-social-list {
-    align-items:      center;
-    display:          flex;
-    gap:              12rem;
-    justify-content:  space-around;
-    margin:           4rem 0 6rem 0;
+    /* align-items:      center; */
+    /* display:          flex; */
+    /* gap:              12rem; */
+    /* justify-content:  space-around; */
+    /* margin:           4rem 0 6rem 0; */
 }
 
 .fab {
-    color:      var(--main-white);
-    font-size:  var(--lllll);   
-    transition: all 0.2s linear;
+    /* color:      var(--main-white); */
+    /* font-size:  var(--lllll);    */
+    /* transition: all 0.2s linear; */
 }
 
 .fab:hover {
-    transform: scale(1.8);
+    /* transform: scale(1.8); */
 }
 
 .social-title {
-    font-size: var(--ll);
+    /* font-size: var(--ll); */
 }
 
 .copyright {
-    font-size: var(--medium);
+    /* font-size: var(--medium); */
 }

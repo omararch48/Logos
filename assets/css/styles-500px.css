@@ -51,3 +51,21 @@
 /**********************************************************/
 /************************* Footer *************************/
 /**********************************************************/
+
+.main-footer {
+    height:           54vh;
+}
+
+.footer-social-list {
+    flex-direction: row;
+    gap:            8rem;
+}
+
+
+.social-title {
+    font-size: var(--medium);
+}
+
+.copyright {
+    font-size: var(--small);
+}

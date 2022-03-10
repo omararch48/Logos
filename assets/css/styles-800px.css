@@ -22,6 +22,38 @@
 /************************* Hero, Nav and Sidemenu *************************/
 /**************************************************************************/
 
+/* Sidebar Menu */
+
+.sidebar-menu {
+    background-color: var(--main-black);
+    color:            var(--main-white);
+    height:           60vh;
+    /* left:             -22vw; */
+    position:         fixed;
+    top:              -60vh;
+    transition:       all 1s ease-in-out;
+    width:            100vw;
+} 
+
+.lateral-nav {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  column;
+    gap:             2rem;
+    justify-content: center;
+    margin-top:      2rem;
+}
+
+.menus {
+    flex-direction: row;
+    margin-top:     1rem;
+}
+
+.lateral-menu,
+.sublateral-menu  {
+    margin-top:     1.4rem;
+}
+
 
 /******************************************************/
 /************************* Us *************************/
