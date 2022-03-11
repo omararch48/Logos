@@ -12,11 +12,38 @@
 /************************* Settings *************************/
 /************************************************************/
 
+*, *:before, *:after {
+    /* box-sizing: inherit; */
+    /* margin:     0; */
+    /* padding:    0; */
+}
+
+html {
+    /* box-sizing: border-box; */
+    /* font-size:  62.5%; */
+}
+
+body {    
+    /* background-color: var(--complementary-two); */
+    /* font-family: 'Ubuntu', sans-serif; */
+    font-size:   var(--large);
+    /* line-height: 2;    */
+}
+
 
 /*************************************************************/
 /************************* Utilities *************************/
 /*************************************************************/
 
+.title-main-presentation {
+    /* display:    block; */
+    font-size:  var(--ll);
+    /* height:     12rem; */
+    margin:     11vh 0 2rem 0;
+    /* padding:    4rem 0 0 0; */
+    /* text-align: center; */
+    /* width:      100%; */
+}
 
 /**************************************************************************/
 /************************* Hero, Nav and Sidemenu *************************/

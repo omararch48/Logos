@@ -49,7 +49,7 @@ html {
 body {    
     background-color: var(--complementary-two);
     font-family: 'Ubuntu', sans-serif;
-    font-size:   2rem;
+    font-size:   var(--medium);
     line-height: 2;   
 }
 
@@ -127,6 +127,23 @@ body {
     font-size: var(--lllll);
 }
 
+.text-center {
+    text-align: center;
+}
+
+.text-color-white {
+    color: var(--main-white);
+}
+
+.title-main-presentation {
+    display:    block;
+    font-size:  var(--extra-large);
+    height:     12rem;
+    margin:     0 0 2rem 0;
+    padding:    4rem 0 0 0;
+    text-align: center;
+    width:      100%;
+}
 
 /**************************************************************************/
 /************************* Hero, Nav and Sidemenu *************************/
