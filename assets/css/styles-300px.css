@@ -246,10 +246,10 @@ body {
 .sidebar-menu {
     background-color: var(--main-black);
     color:            var(--main-white);
-    height:           66%;
+    height:           44rem;
     /* left:             -22vw; */
     position:         fixed;
-    top:              -66%;
+    top:              -44rem;
     transition:       all 1s ease-in-out;
     width:            100vw;
 } 
@@ -265,7 +265,7 @@ body {
 
 .logo-lateral-menu {
     border-radius: 50%;
-    height:        14vh; 
+    height:        8rem; 
 }
 
 .menus {
@@ -290,7 +290,7 @@ body {
 }
 
 .lateral-menu {
-    margin-top: 1.4rem;
+    margin-top: 2rem;
 }
 
 .lateral-menu a, 
@@ -327,10 +327,19 @@ body {
 /*********************************************************/
 
 
-/***********************************************************/
-/************************* Contact *************************/
-/***********************************************************/
+/********************************************************/
+/************************* Blog *************************/
+/********************************************************/
 
+.logo-blog {
+    align-items:     center;
+    display:         flex;
+    justify-content: center;
+}
+
+.logo-blog img {
+    width: 80vw;
+}
 
 /***********************************************************/
 /************************* Contact *************************/
@@ -347,7 +356,7 @@ body {
     color:            var(--main-white);    
     display:          flex;
     flex-direction:   column;
-    height:           60%;
+    height:           40rem;
     justify-content:  center;
     margin-top:       10rem;
     padding:          2rem 0;
