@@ -315,55 +315,54 @@ body {
 /*********************************************************/
 
 .section-qa {
-    padding: 0 8rem;
+    /* padding: 0 8rem; */
 }
 
 .qa {
-    display:         flex;
-    flex-direction:  column;
-    gap:             4rem;
-    justify-content: center;
-    margin:          10rem auto;
-    padding:         4rem;
+    /* display:         flex; */
+    /* flex-direction:  column; */
+    /* gap:             4rem; */
+    /* justify-content: center; */
+    /* margin:          10rem auto; */
+    /* padding:         4rem; */
 }
 
 .qa-green {
-    border-radius: 4rem 0;
-    transition:    all 0.3s linear;
+    /* border-radius: 4rem 0; */
+    /* transition:    all 0.3s linear; */
 }
 
 .qa-green:hover {
-    background-color: var(--main-green);
-    border-radius:    4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
-    color:            var(--main-white);
-    
+    /* background-color: var(--main-green); */
+    /* border-radius:    4rem 0; */
+    /* box-shadow:       1rem 1rem 2rem var(--main-black); */
+    /* color:            var(--main-white); */    
 }
 
 .qa-red {
-    border-radius: 4rem 0;
-    transition:    all 0.3s linear;
+    /* border-radius: 4rem 0; */
+    /* transition:    all 0.3s linear; */
 }
 
 .qa-red:hover {
-    background-color: var(--main-red);
-    border-radius:    4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
-    color:            var(--main-white);
-    
+    /* background-color: var(--main-red); */
+    /* border-radius:    4rem 0; */
+    /* box-shadow:       1rem 1rem 2rem var(--main-black); */
+    /* color:            var(--main-white); */
 }
 
 .question {
-    align-items: flex-start;
-    display:     flex;
-    margin:      0 8rem; 
+    /* align-items: flex-start; */
+    /* display:     flex; */
+    /* margin:      0 8rem;  */
 }
 
 .ql {
-    flex-direction: row;
+    /* flex-direction: row; */
 }
+
 .qr {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
 }
 
 

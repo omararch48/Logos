@@ -84,6 +84,46 @@
 /************************* Q & A *************************/
 /*********************************************************/
 
+.section-qa {
+    padding: 0 8rem;
+    width:   100%;
+}
+
+.qa-green {
+    background-color: transparent;
+    border-radius:    4rem 0;
+    box-shadow:       1rem 1rem 2rem transparent;
+    color:            var(--main-black);
+    transition:       all 0.3s linear;
+}
+
+.qa-green:hover {
+    background-color: var(--main-green);
+    border-radius:    4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    color:            var(--main-white);   
+}
+
+.qa-red {
+    background-color: transparent;
+    border-radius:    4rem 0;
+    box-shadow:       1rem 1rem 2rem transparent;
+    color:            var(--main-black);
+    transition:       all 0.3s linear;
+}
+
+.qa-red:hover {
+    background-color: var(--main-red);
+    border-radius:    4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    color:            var(--main-white);    
+}
+
+.question {
+    align-items: flex-start;
+    display:     flex;
+    margin:      0 8rem; 
+}
 
 /***********************************************************/
 /************************* Contact *************************/
