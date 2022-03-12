@@ -358,33 +358,33 @@ body {
 }
 
 .qa-green {
-    background-color: var(--main-green);
+    background-color: transparent;
     border-radius:    4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
-    color:            var(--main-white);
-    /* transition:       all 0.3s linear; */
+    box-shadow:       1rem 1rem 2rem transparent;
+    color:            var(--main-black);
+    transition:       all 0.3s linear;
 }
 
 .qa-green:hover {
-    /* background-color: var(--main-green); */
-    /* border-radius:    4rem 0; */
-    /* box-shadow:       1rem 1rem 2rem var(--main-black); */
-    /* color:            var(--main-white);    */
+    background-color: var(--main-green);
+    border-radius:    4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    color:            var(--main-white);   
 }
 
 .qa-red {
-    background-color: var(--main-red);
+    background-color: transparent;
     border-radius:    4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
-    color:            var(--main-white);
-    /* transition:       all 0.3s linear; */
+    box-shadow:       1rem 1rem 2rem transparent;
+    color:            var(--main-black);
+    transition:       all 0.3s linear;
 }
 
 .qa-red:hover {
-    /* background-color: var(--main-red); */
-    /* border-radius:    4rem 0; */
-    /* box-shadow:       1rem 1rem 2rem var(--main-black); */
-    /* color:            var(--main-white);     */
+    background-color: var(--main-red);
+    border-radius:    4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    color:            var(--main-white);    
 }
 
 .question {
