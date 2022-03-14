@@ -1,4 +1,4 @@
-const buttonClicked = document.querySelector('.button-clicked');
+const buttonClicked = document.querySelector('.icon-align-justify');
 console.log(buttonClicked);
 
 
