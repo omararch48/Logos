@@ -21,6 +21,10 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
+.second-title {
+    font-size:     var(--lll);
+}
+
 
 /**************************************************************************/
 /************************* Hero, Nav and Sidemenu *************************/
@@ -74,6 +78,43 @@
 /************************* Us *************************/
 /******************************************************/
 
+.us-presentation {
+    background-image:    linear-gradient(to left, transparent 50%, 50%, var(--main-red) 100%), url('../img/jpg/products-start.jpg');
+    background-position: right center;
+    background-repeat:   no-repeat;
+    background-size:     cover;   
+}
+
+.mision-presentation {
+    background-image:    linear-gradient(to right, transparent 50%, 50%, var(--main-green) 100%), url('../img/jpg/products-start.jpg');
+    background-position: left center;
+    background-repeat:   no-repeat;
+    background-size:     cover;   
+}
+
+.vision-presentation {
+    background-image:    linear-gradient(to left, transparent 50%, 50%, var(--main-red) 100%), url('../img/jpg/products-start.jpg');
+    background-position: right center;
+    background-repeat:   no-repeat;
+    background-size:     cover;   
+}
+
+.method-presentation {
+    background-image:    linear-gradient(to right, transparent 50%, 50%, var(--main-green) 100%), url('../img/jpg/products-start.jpg');
+    background-position: left center;
+    background-repeat:   no-repeat;
+    background-size:     cover;   
+}
+
+
+/* Products */
+
+@media (min-width: 620px) {
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 
 /************************************************************/
 /************************* Products *************************/
@@ -106,6 +147,13 @@
 /***********************************************************/
 /************************* Contact *************************/
 /***********************************************************/
+
+
+.container-forms {
+    width:           90%;
+}
+
+
 
 
 /***********************************************************/
