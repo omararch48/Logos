@@ -1,7 +1,4 @@
 const buttonClicked = document.querySelector('.icon-align-justify');
-console.log(buttonClicked);
-
-
 
 
 buttonClicked.addEventListener('click', () => {

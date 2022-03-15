@@ -178,14 +178,17 @@ body {
     margin-left:      2rem;
     margin-top:       1rem;
     padding:          1rem;
+}
+
+.icon-align-justify {
     transition:       all 0.16s linear;
 }
 
-.button-clicked:hover i {
+.icon-align-justify:hover {
     cursor: pointer;
 }
 
-.button-clicked:active i {
+.icon-align-justify:active {
     transform: rotate(180deg);
 }
 
@@ -204,6 +207,8 @@ body {
 .main-nav a:hover {
     border-bottom: solid var(--main-white) 0.4rem;
 }
+
+/* .icon */
 
 /* Hero */
 
@@ -680,3 +685,137 @@ label {
 .copyright {
     font-size: var(--extra-small);
 }
+
+
+
+
+
+
+
+/*********************************************************/
+/************************* About *************************/
+/*********************************************************/
+
+/* Staff */
+
+.staff-container {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  column;
+    gap:             5rem;
+    height:          180rem;
+    justify-content: space-between;
+    margin:          0;
+    padding:         0;
+    width:           100%;
+}
+
+
+/* Team */
+
+.team-container {
+    align-items:     center;
+    display:         flex;
+    gap:             5rem;
+    height:          80rem;
+    justify-content: center;
+    margin:          0;
+    padding:         0;
+    width:           95%;
+}
+
+
+.team-container-list {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  column;
+    height:          60rem;
+    justify-content: space-around;
+    margin:          0;
+    padding:         0;
+    width:           30%;
+}
+
+
+.team-person {
+    align-items:      center;
+    background-color: var(--main-green);   
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    display:          flex;
+    height:           6rem;
+    justify-content:  center;
+    width:            80%;
+}
+
+
+.team-person h4 {
+    color:     var(--main-white);
+    font-size: var(--large);
+}
+
+
+.team-container-card {
+    align-items:     center;
+    display:         flex;
+    gap:             10rem;
+    height:          60rem;
+    justify-content: center;
+    margin:          0;
+    padding:         0;
+    width:           60%;
+}
+
+
+.team-info {
+    align-items:     left;
+    color:           var(--main-white);
+    display:         flex;
+    flex-direction:  column;
+    gap:             4rem;
+    justify-content: center;
+}
+
+
+.team-card {
+    align-items:      center;
+    background-color: var(--main-red);
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    display:          flex;
+    height:           80%;
+    justify-content:  space-around;
+    width:            100%;
+}
+
+
+.team-image img {
+    border-radius: 50%;
+    height:        20rem;
+    margin:        0;
+    padding:       0;
+}
+
+
+/* Info */
+
+.info-container {
+    background-color: orange;
+    height: 80rem;
+    width: 95%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

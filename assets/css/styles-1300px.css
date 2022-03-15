@@ -84,11 +84,15 @@ body {
     /* transition:  all 0.16s linear; */
 }
 
-.button-clicked:hover i {
+.icon-align-justify {
+    /* transition:  all 0.16s linear; */
+}
+
+.icon-align-justify:hover {
     /* cursor: pointer; */
 }
 
-.button-clicked:active i {
+.icon-align-justify:active {
     /* transform: rotate(180deg); */
 }
 
