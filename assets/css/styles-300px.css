@@ -739,58 +739,67 @@ label {
 
 .team-person {
     align-items:      center;
-    background-color: var(--main-green);   
+    background-color: transparent;   
     border-radius:    4rem 0 4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
+    color:            var(--main-black);
     display:          flex;
+    font-size:        var(--large);
     height:           6rem;
     justify-content:  center;
     width:            80%;
 }
 
 
-.team-person h4 {
-    color:     var(--main-white);
-    font-size: var(--large);
+.team-person-active {    
+    background-color: var(--main-green);
+    border-radius:    4rem 0 4rem 0;
+    color:            var(--main-white);
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+}
+
+.team-person:hover,
+.team-person-active:hover {
+    cursor: pointer;
 }
 
 
 .team-container-card {
-    align-items:     center;
-    display:         flex;
-    gap:             10rem;
-    height:          60rem;
-    justify-content: center;
-    margin:          0;
-    padding:         0;
-    width:           60%;
-}
-
-
-.team-info {
-    align-items:     left;
-    color:           var(--main-white);
-    display:         flex;
-    flex-direction:  column;
-    gap:             4rem;
-    justify-content: center;
-}
-
-
-.team-card {
     align-items:      center;
     background-color: var(--main-red);
     border-radius:    4rem 0 4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
+    box-shadow:       1rem 1rem 2rem var(--main-black);    
     display:          flex;
-    height:           80%;
-    justify-content:  space-around;
-    width:            100%;
+    flex-direction:   column;
+    gap:              1rem;
+    height:           60rem;
+    justify-content:  center;
+    margin:           0;
+    padding:          0;
+    width:            62%;
 }
 
+.team-card {
+    align-items:      center;
+    display:          none;
+    height:           100%;
+    justify-content:  space-around;
+    top:              auto;
+    width:            100%;   
+}
+
+.team-info {
+    align-items:     left;
+    color:           transparent;
+    display:         flex;
+    flex-direction:  column;
+    gap:             6rem;
+    height:          100%;
+    justify-content: center;    
+}
 
 .team-image img {
     border-radius: 50%;
+    display: none;
     height:        20rem;
     margin:        0;
     padding:       0;
