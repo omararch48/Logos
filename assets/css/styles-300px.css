@@ -707,27 +707,26 @@ label {
     display:         flex;
     flex-direction:  column;
     gap:             5rem;
-    height:          180rem;
+    height:          300rem;
     justify-content: space-between;
     margin:          0;
     padding:         0;
     width:           100%;
 }
 
-
 /* Team */
 
 .team-container {
     align-items:     center;
     display:         flex;
-    gap:             5rem;
-    height:          80rem;
-    justify-content: center;
+    flex-direction:  column;
+    gap:             2rem;
+    height:          180rem;
+    justify-content: space-around;
     margin:          0;
     padding:         0;
     width:           95%;
 }
-
 
 .team-container-list {
     align-items:     center;
@@ -737,9 +736,8 @@ label {
     justify-content: space-around;
     margin:          0;
     padding:         0;
-    width:           30%;
+    width:           100%;
 }
-
 
 .team-person {
     align-items:      center;
@@ -750,9 +748,8 @@ label {
     font-size:        var(--large);
     height:           6rem;
     justify-content:  center;
-    width:            80%;
+    width:            90%;
 }
-
 
 .team-person-active {    
     background-color: var(--main-green);
@@ -766,7 +763,6 @@ label {
     cursor: pointer;
 }
 
-
 .team-container-card {
     align-items:      center;
     background-color: var(--main-red);
@@ -774,17 +770,18 @@ label {
     box-shadow:       1rem 1rem 2rem var(--main-black);    
     display:          flex;
     flex-direction:   column;
-    gap:              1rem;
-    height:           60rem;
+    gap:              4rem;
+    height:           100%;
     justify-content:  center;
     margin:           0;
-    padding:          0;
-    width:            62%;
+    padding:          2rem;
+    width:            95%;
 }
 
 .team-card {
     align-items:      center;
     display:          none;
+    flex-direction:   column-reverse;
     height:           100%;
     justify-content:  space-around;
     top:              auto;
@@ -796,19 +793,19 @@ label {
     color:           transparent;
     display:         flex;
     flex-direction:  column;
-    gap:             6rem;
+    gap:             4rem;
     height:          100%;
-    justify-content: center;    
+    justify-content: center;
+    width:           100%;
 }
 
 .team-image img {
     border-radius: 50%;
-    display: none;
+    display:       none;
     height:        20rem;
     margin:        0;
     padding:       0;
 }
-
 
 /* Info */
 
@@ -817,15 +814,6 @@ label {
     height: 80rem;
     width: 95%;
 }
-
-
-
-
-
-
-
-
-
 
 
 
