@@ -597,11 +597,15 @@ body {
 .formulario fieldset {
     background-color: var(--main-white);
     border:           0.1rem solid var(--complementary-one);
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);    
     margin-bottom:    2rem;
 }
 
 .formulario legend {
     background-color: var(--main-green);
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);    
     color:            var(--main-white);
     font-weight:      900;
     margin-bottom:    4rem;

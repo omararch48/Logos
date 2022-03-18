@@ -5,9 +5,13 @@ let cardSelection = document.querySelectorAll('.team-card');
 let imageSelection = document.querySelectorAll('.team-image img');
 
 
-infoSelection[0].style.color = 'var(--main-white)';
-cardSelection[0].style.display = 'flex';
-imageSelection[0].style.display = 'block';
+for (let i = 0; i < teamSelection.length; i++) {
+    if (teamSelection[i] == teamSelected) {
+        infoSelection[i].style.color = 'var(--main-white)';
+        cardSelection[i].style.display = 'flex';
+        imageSelection[i].style.display = 'block';        
+    }
+}
 
 
 teamSelection.forEach((teamName) => {
