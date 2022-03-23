@@ -404,8 +404,9 @@ body {
     border-radius:   4rem 0 0 0;
     color:           var(--main-white);
     display:         flex;
-    height:          10rem;
+    height:          12rem;
     justify-content: center;
+    text-align:      center;
 }
 
 .product-image {
@@ -430,7 +431,7 @@ body {
     color:           var(--main-white);
     display:         flex;
     flex-direction:  column;
-    height:          60rem;
+    height:          58rem;
     justify-content: center;
     padding:         2rem 4rem;
 } 
@@ -452,6 +453,32 @@ body {
 
 .product-link a:active {
     transform: scale(0.9);
+}
+
+/* Product */
+
+.product-info-container {
+    background-color: var(--complementary-one);
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+    margin:           20rem 4rem 0 4rem;
+    padding:          10rem 2rem;
+}
+
+.product-image-container {
+    align-items:     center;
+    display:         flex;
+    justify-content: center;
+    margin:          5rem auto;
+    /* margin:          10rem auto; */
+    
+}
+
+.product-image-container img {
+    border-radius: 1rem;
+    box-shadow:    1rem 1rem 2rem var(--main-black);
+    height:        14rem;
+    /* height: 80vh; */
 }
 
 
@@ -522,15 +549,56 @@ body {
 /************************* Blog *************************/
 /********************************************************/
 
-.logo-blog {
+.blog-list {
     align-items:     center;
     display:         flex;
+    flex-direction:  column;
+    gap:             8rem;
     justify-content: center;
+    margin:          10rem auto;
+    width:           100%;
 }
 
-.logo-blog img {
-    width: 80vw;
+.blog-element-list {
+    align-items:     center;
+    border-radius:   4rem 0 4rem 0;
+    display:         flex;
+    flex-direction:  column;
+    gap:             4rem;
+    justify-content: space-around;
+    padding:         4rem 2rem;
+    transition:      background-color 0.4s linear;    
+    width:           80%;
 }
+
+.blog-element-list:hover {
+    background-color: var(--complementary-one);
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);
+}
+
+.blog-element-image img {
+    border-radius: 1rem;
+    box-shadow:    1rem 1rem 2rem var(--main-black);
+    height:        20rem;
+    width:         100%;
+
+}
+
+.blog-element-description {
+    text-align: justify;
+    width:      100%;
+
+}
+
+.blog-element-description a {
+    color:       var(--main-black);
+    display:     block;
+    font-weight: bold;
+    text-align:  end;
+}
+
+
 
 /***********************************************************/
 /************************* Contact *************************/
@@ -691,11 +759,6 @@ label {
 }
 
 
-
-
-
-
-
 /*********************************************************/
 /************************* About *************************/
 /*********************************************************/
@@ -814,9 +877,3 @@ label {
     height: 80rem;
     width: 95%;
 }
-
-
-
-
-
-

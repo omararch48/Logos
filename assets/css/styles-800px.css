@@ -136,7 +136,36 @@
 }
 
 
+/********************************************************/
+/************************* Blog *************************/
+/********************************************************/
 
+
+
+.blog-element-list {
+    flex-direction:  row;
+    gap: 8rem;
+    justify-content: center;
+    padding: 4rem;
+
+}
+
+.blog-left {
+    flex-direction: row;    
+}
+
+.blog-rigth {
+    flex-direction: row-reverse;    
+}
+
+
+.blog-element-image img {
+    height: auto;
+    width: 30rem;
+}
+
+.blog-element-description {
+}
 
 
 /*********************************************************/
