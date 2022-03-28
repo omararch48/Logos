@@ -28,6 +28,13 @@
     --main-black:        #000000;
     --complementary-one: #b1c6af;
     --complementary-two: #d6d6d6;
+    /* Calendar */
+    --cancel:     #f54f58;
+    --to-confirm: #eee350;
+    --sold:       #5deb95;
+    --available:  #7a78e4;
+
+
 }
 
 
@@ -1067,3 +1074,111 @@ label {
     height: 80rem;
     width: 95%;
 }
+
+
+/********************************************************/
+/************************* Week *************************/
+/********************************************************/
+
+.week-container-main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 90rem;
+    margin: 20rem 0 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.week-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+}
+
+.week-days {
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0;
+    height: 15%;
+    width: 100%;
+}
+
+.week-day {
+    align-items: center;
+    background-color: var(--main-green);
+    box-shadow:       1rem 1rem 2rem var(--main-black);    
+    border-radius: 0.5rem;
+    color: var(--main-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90%;
+    width: 90%;
+}
+
+.week-hours {
+
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(7, 1fr);
+    height: 80%;
+    width: 100%;
+    margin: 0;
+}
+
+.week-hours-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.week-hour {
+    align-items: center;
+    border: 0.4rem solid transparent;
+    box-shadow:       0.2rem 0.2rem 1.2rem var(--main-black);    
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    width: 98%;
+}
+
+.week-hour:hover {
+    border: 0.4rem solid var(--main-black);
+    cursor: pointer;
+}
+
+.cancel-hour {
+    background-color: var(--cancel);
+}
+
+.to-confirm-hour {
+    background-color: var(--to-confirm);
+}
+
+.sold-hour {
+    background-color: var(--sold);
+}
+
+.available-hour {
+    background-color: var(--available);
+}
+
+.none-hour {
+    background-color: var(--complementary-one);
+}
+
+
+
