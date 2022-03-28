@@ -107,15 +107,6 @@
 }
 
 
-/* Products */
-
-@media (min-width: 620px) {
-    .products-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
 /************************************************************/
 /************************* Products *************************/
 /************************************************************/
@@ -140,33 +131,11 @@
 /************************* Blog *************************/
 /********************************************************/
 
+/* Post */
 
-
-.blog-element-list {
-    flex-direction:  row;
-    gap: 8rem;
-    justify-content: center;
-    padding: 4rem;
-
+.post-image img {
+    width:  45%;
 }
-
-.blog-left {
-    flex-direction: row;    
-}
-
-.blog-rigth {
-    flex-direction: row-reverse;    
-}
-
-
-.blog-element-image img {
-    height: auto;
-    width: 30rem;
-}
-
-.blog-element-description {
-}
-
 
 /*********************************************************/
 /************************* Q & A *************************/

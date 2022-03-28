@@ -66,6 +66,22 @@
 /************************* Contact *************************/
 /***********************************************************/
 
+/* Social Modal */
+
+.modal-container-card {
+    width: 65%;
+}
+
+/* Social Grid */
+
+.social-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.social-grid-card i {
+    font-size: 10rem;
+}
+
 
 /**********************************************************/
 /************************* Footer *************************/
