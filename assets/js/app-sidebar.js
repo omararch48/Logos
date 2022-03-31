@@ -1,12 +1,24 @@
-const buttonClicked = document.querySelector('.icon-align-justify');
+(() => {
 
 
-buttonClicked.addEventListener('click', () => {
+    'use strict'
 
-    document.querySelector('.sidebar-menu').classList.toggle('active');
-
-    // document.querySelector('sidebar-menu').classList.toggle('.hidden');
-});
-
+    
+    let navBar = document.querySelector('.sidebar-menu');
+    const buttonClicked = document.querySelector('.icon-align-justify');
 
 
+    buttonClicked.addEventListener('click', () => {
+        
+        navBar.classList.toggle('active');
+    });
+    
+    
+    document.addEventListener('keydown', ({key}) => {
+        if (key === 'Escape' && navBar.classList.contains('active')) {
+            navBar.classList.toggle('active');
+        }
+    });
+
+
+})();

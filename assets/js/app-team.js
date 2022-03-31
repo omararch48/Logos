@@ -1,36 +1,92 @@
-let teamSelected = document.querySelector('.team-person-active');
-let teamSelection = document.querySelectorAll('.team-person');
-let infoSelection = document.querySelectorAll('.team-info');
-let cardSelection = document.querySelectorAll('.team-card');
-let imageSelection = document.querySelectorAll('.team-image img');
+(() => {
 
 
-for (let i = 0; i < teamSelection.length; i++) {
-    if (teamSelection[i] == teamSelected) {
-        infoSelection[i].style.color = 'var(--main-white)';
-        cardSelection[i].style.display = 'flex';
-        imageSelection[i].style.display = 'block';        
+    'use strict'
+
+    
+    /* Vectors and elements */
+
+    const teamModalContainer = document.querySelector('.team-modal-container');
+    const leftArrow = document.querySelector('.left');
+    const rightArrow = document.querySelector('.right');
+    const infoVector = document.querySelectorAll('.team-info');
+    const nameVector = document.querySelectorAll('.team-name-bar h4');
+    const modalVector = document.querySelectorAll('.team-modal-info');
+    const closeVector = document.querySelectorAll('.team-modal-close');
+    let index = 0;
+
+
+    /* Functions */ 
+
+    const setProperties = function(index) {
+        infoVector[index].classList.toggle('display-none');
+        infoVector[index].classList.toggle('display-flex');
+        nameVector[index].classList.toggle('display-none');
+        nameVector[index].classList.toggle('display-block');
     }
-}
 
 
-teamSelection.forEach((teamName) => {
-    teamName.addEventListener('click', () => {
-        for (let i = 0; i < teamSelection.length; i++) {
-            if (teamSelection[i] == teamName) {
-                teamSelection[i].classList.toggle('team-person-active');
-                infoSelection[i].style.color = 'var(--main-white)';
-                cardSelection[i].style.display = 'flex';
-                imageSelection[i].style.display = 'block';
-            }
-            if (teamSelection[i] == teamSelected) {
-                teamSelection[i].classList.toggle('team-person-active');
-                infoSelection[i].style.color = 'transparent';
-                cardSelection[i].style.display = 'none';
-                imageSelection[i].style.display = 'none';
-            }            
-        }   
-        teamSelected = document.querySelector('.team-person-active');
-        teamSelection = document.querySelectorAll('.team-person');
+    const setPropertiesModal = function(index) {
+        teamModalContainer.classList.toggle('display-none');
+        teamModalContainer.classList.toggle('display-flex');
+        modalVector[index].classList.toggle('display-none');
+        modalVector[index].classList.toggle('display-block');
+    }
+
+
+    /* Start selections */ 
+
+    setProperties(index);
+
+
+    leftArrow.addEventListener('click', () => {
+        setProperties(index);
+        if (index == 0) {
+            index = nameVector.length - 1;
+        } else {
+            index = index - 1;
+        }
+        setProperties(index);
     });
-});
+
+
+    rightArrow.addEventListener('click', () => {
+        setProperties(index);
+        if (index == nameVector.length - 1) {
+            index = 0;
+        } else {
+            index = index + 1;
+        }
+        setProperties(index);
+    });
+
+
+    infoVector.forEach(element => {
+        element.addEventListener('click', () => {
+            setPropertiesModal(index);
+        })
+    });
+
+
+    nameVector.forEach(element => {
+        element.addEventListener('click', () => {
+            setPropertiesModal(index);
+        })
+    });
+
+
+    closeVector.forEach(element => {
+        element.addEventListener('click', () => {
+            setPropertiesModal(index);
+        });
+    });
+
+
+    document.addEventListener('keydown', ({key}) => {
+        if (key === 'Escape' && modalVector[index].classList.contains('display-block')) {
+            setPropertiesModal(index);
+        }
+    });
+
+
+})();

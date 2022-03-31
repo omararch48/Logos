@@ -33,6 +33,8 @@
     --to-confirm: #eee350;
     --sold:       #5deb95;
     --available:  #7a78e4;
+
+
 }
 
 
@@ -81,18 +83,6 @@ body {
 
 .color-black  {
     color: var(--main-black);
-}
-
-.display-block {
-    display: block;
-}
-
-.display-flex {
-    display: flex;
-}
-
-.display-none {
-    display: none;
 }
 
 .flex-center {
@@ -970,162 +960,155 @@ label {
 /************************* About *************************/
 /*********************************************************/
 
-.team-modal-container {
+.team-container {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    position:        fixed;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.team-modal-card {
-    align-items: center;
-    background-color: var(--main-red);
-    border-radius:    4rem 0 4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
-    color: var(--main-white);
+    background-color: orange;
     display: flex;
-    height: 85%;
+    height: 60rem;
+    margin: 10rem 0 0 0;
+    padding: 0;
     flex-direction: column;
     justify-content: center;
-    margin: 0;
-    padding: 4rem;
-    width: 80%;
+    width: 100%;
+    
 }
 
-.team-modal-presentation {
+.team-container-main {
     align-items: center;
+    background-color: blue;
     display: flex;
-    justify-content: space-around;
-}
-.team-modal-presentation {
-    margin: 2rem auto;
-}
-
-.team-modal-photo img {
-    height: 22rem;
-    border-radius: 50%;
-}
-.team-modal-close {
-    margin-top: 2rem;
-    text-align: center;
+    
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
-.team-modal-close span {
-    align-items: center;
-    border-bottom: 4px solid transparent;
-    padding-bottom: 1rem;
-    padding-bottom: 1rem;
-    margin-top: 2rem;
+.team-container-bar {
+    background-color: green;
+    width: 100%;
+}
+
+.team-container-card {
+    background-color: red;
+    width: 100%;
 }
 
 
-.team-modal-close span:hover {
-    padding-bottom: 1rem;
-    cursor: pointer;
-    border-bottom: 4px solid var(--main-white);
-}
+/* Staff */
 
-.team-container {
+/* .staff-container {
     align-items:     center;
     display:         flex;
     flex-direction:  column;
-    height:          50rem;
-    justify-content: center;
-    margin:          10rem 0 0 0;
+    gap:             5rem;
+    height:          300rem;
+    justify-content: space-between;
+    margin:          0;
     padding:         0;
     width:           100%;
-}
+} */
 
-.team-bar {
+/* Team */
+
+/* .team-container {
     align-items:     center;
     display:         flex;
-    height:          15%;
-    justify-content: space-between;
-    margin:          1rem 0;
+    flex-direction:  column;
+    gap:             2rem;
+    height:          180rem;
+    justify-content: space-around;
+    margin:          0;
     padding:         0;
-    width:           50%;
+    width:           95%;
+} */
+
+/* .team-container-list {
+    align-items:     center;
+    display:         flex;
+    flex-direction:  column;
+    height:          60rem;
+    justify-content: space-around;
+    margin:          0;
+    padding:         0;
+    width:           100%;
+} */
+
+/* .team-person {
+    align-items:      center;
+    background-color: transparent;   
+    border-radius:    4rem 0 4rem 0;
+    color:            var(--main-black);
+    display:          flex;
+    font-size:        var(--large);
+    height:           6rem;
+    justify-content:  center;
+    width:            90%;
 }
 
-.left {
-    margin: 0 3rem 0 0;
+.team-person-active {    
+    background-color: var(--main-green);
+    border-radius:    4rem 0 4rem 0;
+    color:            var(--main-white);
+    box-shadow:       1rem 1rem 2rem var(--main-black);
 }
 
-.left i {
-    color:     var(--main-green);
-    font-size: var(--llll);
-    transition: all linear 0.2s;
-}
-
-.left i:hover {
+.team-person:hover,
+.team-person-active:hover {
     cursor: pointer;
-    transform: scale(1.4);
 }
 
-.team-name-bar {
-    display:        flex;
-    flex-direction: column;
-    text-align:     center;
-    width: 70%;
-}
-
-.team-name-bar:hover {
-    cursor: pointer;
-}
-
-.team-name-bar h4 {
-    color: var(--main-green);
-}
-    
-.right {    
-    margin: 0 0 0 3rem;
-}
-
-.right i {
-    color:      var(--main-green);
-    font-size:  var(--llll);
-    transition: all linear 0.2s;
-}
-
-.right i:hover {
-    cursor: pointer;
-    transform: scale(1.4);
-}
-
-.right i {
-    cursor: pointer;
+.team-container-card {
+    align-items:      center;
+    background-color: var(--main-red);
+    border-radius:    4rem 0 4rem 0;
+    box-shadow:       1rem 1rem 2rem var(--main-black);    
+    display:          flex;
+    flex-direction:   column;
+    gap:              4rem;
+    height:           100%;
+    justify-content:  center;
+    margin:           0;
+    padding:          2rem;
+    width:            95%;
 }
 
 .team-card {
-    background-color: var(--main-red);
-    border-radius:    4rem 0 4rem 0;
-    box-shadow:       1rem 1rem 2rem var(--main-black);
-    color:            var(--main-white);
-    height:           80%;
-    margin:           1rem 0 0 0;
-    padding:          4rem 0;
-    width:            50%;
-}
-
-.team-card:hover {
-    cursor: pointer;
+    align-items:      center;
+    display:          none;
+    flex-direction:   column-reverse;
+    height:           100%;
+    justify-content:  space-around;
+    top:              auto;
+    width:            100%;   
 }
 
 .team-info {
-    align-items:     center;
+    align-items:     left;
+    color:           transparent;
+    display:         flex;
     flex-direction:  column;
-    justify-content: space-around;
+    gap:             4rem;
+    height:          100%;
+    justify-content: center;
+    width:           100%;
 }
 
-.info-photo img {
+.team-image img {
     border-radius: 50%;
-    height:        25rem;
-    margin-bottom: 2rem;
-}
+    display:       none;
+    height:        20rem;
+    margin:        0;
+    padding:       0;
+} */
 
+/* Info */
+
+/* .info-container {
+    background-color: orange;
+    height: 80rem;
+    width: 95%;
+} */
 
 
 /********************************************************/

@@ -1,5 +1,5 @@
 /*                                       */
-/*            * 400x - 500px *           */
+/*            * 500x - 600px *           */
 /*                                       */
 
 
@@ -17,6 +17,16 @@
 /************************* Utilities *************************/
 /*************************************************************/
 
+.title-main-presentation {
+    /* display:    block; */
+    font-size:  var(--l);
+    /* height:     12rem; */
+    margin:     0 0 2rem 0;
+    padding:    2rem 0 0 0;
+    /* text-align: center; */
+    /* width:      100%; */
+}
+
 
 /**************************************************************************/
 /************************* Hero, Nav and Sidemenu *************************/
@@ -32,6 +42,15 @@
 /************************* Products *************************/
 /************************************************************/
 
+/* Product */
+
+.product-image-container {
+    margin: 10rem auto;
+}
+
+.product-image-container img {
+    height: 20rem;
+}
 
 /*********************************************************/
 /************************* Q & A *************************/
@@ -47,30 +66,83 @@
 /************************* Contact *************************/
 /***********************************************************/
 
+/* Social Modal */
+
+.modal-container-card {
+    width: 65%;
+}
+
+/* Social Grid */
+
+.social-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.social-grid-card i {
+    font-size: 10rem;
+}
+
 
 /**********************************************************/
 /************************* Footer *************************/
 /**********************************************************/
 
 .main-footer {
-    /* height: 40rem; */
+    /* align-items:      center; */
+    /* background-color: var(--main-black); */
+    /* color:            var(--main-white);     */
+    /* display:          flex; */
+    /* flex-direction:   column; */
+    /* height:           46vh; */
+    /* justify-content:  center; */
+    /* margin-top:       10rem; */
+}
+
+.footer-social {
+    /* align-items:      center; */
+    /* display:          flex; */
+    /* flex-direction:   column; */
+    /* justify-content:  center; */
 }
 
 .footer-social-list {
-    flex-direction: row;
-    gap:            8rem;
+    /* align-items:      center; */
+    /* display:          flex; */
+    gap:              12rem;
+    /* justify-content:  space-around; */
+    /* margin:           4rem 0 6rem 0; */
 }
 
+.fab {
+    /* color:      var(--main-white); */
+    font-size:  var(--lllll);   
+    /* transition: all 0.2s linear; */
+}
+
+.fab:hover {
+    /* transform: scale(1.8); */
+}
 
 .social-title {
-    font-size: var(--medium);
+    font-size: var(--ll);
 }
 
 .copyright {
-    font-size: var(--small);
+    font-size: var(--medium);
 }
 
 
 /*********************************************************/
 /************************* About *************************/
 /*********************************************************/
+
+/* Team */
+
+.team-container {
+    height:          120rem;
+    gap: 6rem;
+}
+
+.team-person {
+    width:            70%;
+}
